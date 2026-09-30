@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="fr">
+<!-- SOMMAIRE — chercher « ## » : HEADER · HERO · ARTISTE · OEUVRES · EXPOSITIONS · ATELIER · CONTACT-PRIX · FOOTER · VISIONNEUSE · SCRIPTS -->
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cléa-Chantal Léandri — Artiste peintre · La Ciotat</title>
+<meta name="description" content="Cléa-Chantal Léandri, artiste peintre à La Ciotat (sud de la France) : abstraction tachiste, expression lyrique, œuvres, expositions, visite de l'atelier.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#f6f1e7">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cléa-Chantal Léandri — Artiste peintre · La Ciotat">
+<meta property="og:description" content="Abstraction tachiste et expression lyrique. Peignez vous-même sur la toile, puis découvrez les œuvres.">
+<meta property="og:image" content="assets/img/og.jpg">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="icon" href="assets/img/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Cléa-Chantal Léandri","jobTitle":"Artiste peintre","email":"chantalleandri@gmail.com","telephone":"+33617603595","address":{"@type":"PostalAddress","streetAddress":"236 av Guillaume Dulac","postalCode":"13600","addressLocality":"La Ciotat","addressCountry":"FR"},"sameAs":["https://www.instagram.com/clea_chantalleandri/","https://www.facebook.com/chantal.leandri","https://twitter.com/CLEALEANDRI","https://www.singulart.com/fr/artiste/cl%C3%A9a-chantal-leandri-22797"]}
+</script>
+</head>
+<body>
+<a class="skip" href="#artiste">Aller au contenu</a>
+
+<!-- ## HEADER -->
+<header class="site-header" id="top">
+  <a class="brand" href="#accueil" aria-label="Cléa Léandri, accueil">
+    <svg class="splash" viewBox="0 0 48 44" aria-hidden="true">
+      <circle cx="14" cy="22" r="8" fill="#19b0c4"/><circle cx="26" cy="16" r="9" fill="#f2b705"/>
+      <circle cx="31" cy="27" r="8" fill="#e5432d"/><circle cx="22" cy="31" r="6" fill="#e0508a"/>
+      <circle cx="37" cy="14" r="5" fill="#55a84a"/><circle cx="9" cy="10" r="3" fill="#1e46c8"/>
+    </svg>
+    <span class="brand-text"><em>Cléa</em><small>artiste-peintre</small></span>
+  </a>
+
+  <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+
+  <nav id="nav" class="nav" aria-label="Navigation principale">
+    <ul>
+      <li><a href="#accueil" class="nav-link">Accueil</a></li>
+      <li class="has-sub">
+        <a href="#oeuvres" class="nav-link">Œuvres</a>
+        <ul class="sub sub-cols" data-sub="works">
+          <!-- rempli par main.js -->
+        </ul>
+      </li>
+      <li class="has-sub">
+        <a href="#expositions" class="nav-link">Expositions</a>
+        <ul class="sub">
+          <li><a href="#expositions" data-expo="laciotat">Expo La Ciotat</a></li>
+          <li><a href="#expositions" data-expo="bruxelles">Expo Bruxelles</a></li>
+          <li><a href="#expositions" data-expo="capbenat">Expo Cap Bénat</a></li>
+        </ul>
+      </li>
+      <li><a href="#atelier" class="nav-link">Visite de l'atelier</a></li>
+      <li><a href="#contact" class="nav-link nav-cta">Contact &amp; Prix</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<!-- ## HERO -->
+<section class="hero" id="accueil" aria-label="Accueil">
+  <canvas id="paint" data-art="assets/img/w/502c57e4.webp" aria-hidden="true"></canvas>
+  <div class="hero-static" aria-hidden="true"></div>
+
+  <div class="hero-copy">
+    <p class="eyebrow">Artiste peintre · La Ciotat · Sud de la France</p>
+    <h1><span class="h1-a">Cléa-Chantal</span> <span class="h1-b">Léandri</span></h1>
+    <p class="lead">Abstraction tachiste &amp; expression lyrique — la matière, la couleur et la lumière du sud.</p>
+    <blockquote class="quote">« Je ne peins pas ce que je vois. Je peins ce que je pense. »<cite>Pablo Picasso</cite></blockquote>
+    <div class="hero-actions">
+      <a class="btn btn-solid" href="#oeuvres">Découvrir les œuvres</a>
+      <a class="btn btn-ghost" href="#artiste">Rencontrer l'artiste</a>
+    </div>
+  </div>
+
+  <p class="zone-hint" aria-hidden="true">Votre toile — à vous de jouer</p>
+
+  <a class="banner" href="#expositions" data-expo="laciotat">
+    <span class="dot"></span>
+    <span><strong>Prochaine exposition</strong> — Chapelle des Pénitents Bleus · 17 avril &gt; 23 mai 2026 · La Ciotat</span>
+  </a>
+
+  <div class="paint-ui" role="group" aria-label="Outils de peinture">
+    <p class="hint"><span class="hint-desktop">Bougez la souris, <b>cliquez et maintenez</b> pour charger la matière — attention, elle coule.</span><span class="hint-touch">Touchez <b>Peindre</b> puis dessinez du doigt.</span></p>
+    <div class="ui-row">
+      <button class="toggle" data-action="toggle" aria-pressed="true" title="Activer / désactiver la peinture au doigt"><span>Défiler</span></button>
+      <div class="swatches">
+        <button class="sw sw-auto" data-color="auto" aria-pressed="true" aria-label="Couleurs en fondu" title="Couleurs en fondu"></button>
+        <button class="sw sw-toile" data-color="toile" aria-pressed="false" aria-label="Révéler une toile" title="Révéler une toile"></button>
+        <button class="sw" style="--c:#1d44cc" data-color="cobalt" aria-pressed="false" aria-label="Cobalt"></button>
+        <button class="sw" style="--c:#17adc4" data-color="turquoise" aria-pressed="false" aria-label="Turquoise"></button>
+        <button class="sw" style="--c:#f5b80a" data-color="jaune" aria-pressed="false" aria-label="Jaune"></button>
+        <button class="sw" style="--c:#e6402b" data-color="vermillon" aria-pressed="false" aria-label="Vermillon"></button>
+        <button class="sw" style="--c:#e0508a" data-color="rose" aria-pressed="false" aria-label="Rose"></button>
+        <button class="sw" style="--c:#4da545" data-color="vert" aria-pressed="false" aria-label="Vert"></button>
+        <button class="sw" style="--c:#1a1a2a" data-color="encre" aria-pressed="false" aria-label="Noir d'encre"></button>
+      </div>
+      <div class="sizes" role="group" aria-label="Taille du pinceau">
+        <button data-size="s" aria-pressed="false" aria-label="Pinceau fin"><i style="--d:6px"></i></button>
+        <button data-size="m" aria-pressed="true" aria-label="Pinceau moyen"><i style="--d:11px"></i></button>
+        <button data-size="l" aria-pressed="false" aria-label="Gros pinceau"><i style="--d:17px"></i></button>
+      </div>
+      <div class="actions">
+        <button class="txt" data-action="clear">Effacer</button>
+        <button class="txt" data-action="save">Garder ma toile</button>
+      </div>
+    </div>
+  </div>
+
+  <a class="scroll-cue" href="#artiste" aria-label="Défiler vers la suite"><span></span></a>
+</section>
+
+<!-- ## ARTISTE -->
+<section class="section artist" id="artiste">
+  <div class="wrap artist-grid">
+    <figure class="portrait reveal tilt">
+      <img src="assets/img/t/portrait.webp" srcset="assets/img/t/portrait.webp 720w, assets/img/w/portrait.webp 1500w" sizes="(min-width:900px) 40vw, 90vw" alt="Cléa-Chantal Léandri, assise sur une grande œuvre bleue et blanche" loading="lazy" width="1500" height="1036">
+      <figcaption>Cléa-Chantal Léandri</figcaption>
+    </figure>
+
+    <div class="artist-text">
+      <p class="kicker reveal">L'artiste</p>
+      <h2 class="reveal">Une peinture qui <em>jette, attend, regarde</em></h2>
+      <div class="prose reveal">
+        <p>Après une formation classique, Cléa-Chantal Léandri suit durant trois années les cours de l'Atelier Imagine avec le peintre suisse Thierry Bugnion. Avec lui, elle perfectionne ses bases des techniques de l'aquarelle, de la gouache, de l'acrylique et de l'huile. Elle complète son art au cours de nombreuses master classes de l'académie de peinture du « Moulin de Perrot » avec des professeurs comme les peintres Jequel, Jérôme Tisserand, Thibaud de Reimpré et surtout le peintre italien Giancarlo Bargoni. Elle avouera que c'est grâce à ce dernier qu'elle a découvert sa véritable nature dans le mouvement de l'expression lyrique.</p>
+        <p>Fascinée par la matière et curieuse de toutes les nouvelles molécules que la technologie met à notre disposition, l'artiste vit parfaitement bien ancrée dans son époque. Ses recherches l'amènent à mettre en œuvre toute découverte qui l'interpelle, donnant ainsi à ses œuvres une touche très particulière, sa « signature ».</p>
+      </div>
+      <blockquote class="pull reveal">
+        « Travailler le fond de la toile en jetant différents bains de pigments qui prendront le temps de sécher, analyser les taches de couleurs et si le fond de toile paraît satisfaisant, commencer seulement à peindre. »
+      </blockquote>
+      <div class="prose reveal">
+        <p>Après toutes ces années d'étude et de remise en question, elle s'oriente vers une <strong>abstraction tachiste</strong> qui s'apparenterait à l'écriture automatique. Poète hier déclarée, elle en subit toujours les heureuses influences. Cette manière de procéder lui laisse toute liberté sur les taches : « l'interprétation du cerveau par rapport à l'œil et aux bains multiples transcende les pigments colorés ».</p>
+        <p>Les caractéristiques de cette très attachante artiste : la recherche de la musicalité de l'ensemble des détails, l'élévation de l'esprit, la liberté et… le travail. <span class="sign">— Solange Strimon</span></p>
+      </div>
+      <p class="masters reveal"><span>Ses maîtres</span> Georges Mathieu (pour le dessin), Jean Fautrier, Tàpies, Hartung, Pollock, Pierre Alechinsky.</p>
+      <p class="links reveal">
+        <a href="https://www.singulart.com/fr/artiste/cl%C3%A9a-chantal-leandri-22797?ref=ts" target="_blank" rel="noopener">Singulart ↗</a>
+        <a href="https://clea.dictionnairedesartistescotes.com/?langue=FR" target="_blank" rel="noopener">Artiste côté Drouot ↗</a>
+        <a href="https://www.youtube.com/watch?v=P6-VcSQMoX0&amp;t=4s" target="_blank" rel="noopener">Vidéo ↗</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ## OEUVRES -->
+<section class="section works" id="oeuvres">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker reveal">Œuvres</p>
+      <h2 class="reveal">La galerie</h2>
+      <p class="reveal sub-lead">Toutes les œuvres ne sont pas en ligne — l'atelier est ouvert sur rendez-vous.</p>
+    </div>
+    <div class="filters reveal" role="tablist" aria-label="Catégories d'œuvres"></div>
+    <div class="gallery" id="gallery" aria-live="polite"></div>
+    <div class="more-wrap"><button class="btn btn-ghost" id="more" hidden>Voir plus d'œuvres</button></div>
+    <aside class="tapis" id="tapis" hidden>
+      <div>
+        <h3>Les tapis</h3>
+        <p>Créée exclusivement pour les cabinets d'architectes et bureaux d'étude, Sennah, dans ses propres ateliers de Katmandou, répond à toutes vos attentes pour la réalisation de tapis sur mesure : dimensions, couleurs, formes, matières, motifs et qualité de serrage. Des pièces uniques, de la descente de lit au tapis de très grande dimension.</p>
+        <a class="btn btn-solid" href="https://sennahlartdutapis.com/tapis-leandri" target="_blank" rel="noopener">Visiter le site Sennah, l'art du tapis ↗</a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ## EXPOSITIONS -->
+<section class="section expos" id="expositions">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker reveal">Expositions</p>
+      <h2 class="reveal">Sur les murs, <em>de la Provence à Bruxelles</em></h2>
+    </div>
+
+    <div class="tabs reveal" role="tablist" aria-label="Expositions">
+      <button role="tab" id="t-laciotat" data-tab="laciotat" aria-selected="true">Expo La Ciotat</button>
+      <button role="tab" id="t-bruxelles" data-tab="bruxelles" aria-selected="false">Expo Bruxelles</button>
+      <button role="tab" id="t-capbenat" data-tab="capbenat" aria-selected="false">Expo Cap Bénat</button>
+      <button role="tab" id="t-parcours" data-tab="parcours" aria-selected="false">Parcours</button>
+    </div>
+
+    <div class="panel" id="p-laciotat" data-panel="laciotat" role="tabpanel" aria-labelledby="t-laciotat">
+      <div class="expo-intro">
+        <div>
+          <p class="expo-date">17 avril &gt; 23 mai 2026</p>
+          <h3>Histoires d'eau</h3>
+          <p class="expo-place">La Ciotat, Chapelle des Pénitents Bleus</p>
+          <p>Invitation à un voyage sous les embruns vers un dialogue entre la Méditerranée et l'océan.</p>
+        </div>
+        <img class="expo-place-img" src="assets/img/t/6c649bcc.webp" alt="La chapelle des Pénitents Bleus, voûtes blanches et toiles bleues accrochées le long des murs" loading="lazy" width="720" height="501">
+      </div>
+      <p class="mini-title">Quelques tableaux de l'exposition</p>
+      <div class="expo-grid" data-expo-grid></div>
+    </div>
+
+    <div class="panel" id="p-bruxelles" data-panel="bruxelles" role="tabpanel" aria-labelledby="t-bruxelles" hidden>
+      <div class="expo-intro single">
+        <div>
+          <p class="expo-date">4 &gt; 27 juillet 2025</p>
+          <h3>Entre Espace Art Gallery</h3>
+          <p class="expo-place">Bruxelles</p>
+          <p>Liste des tableaux exposés lors de l'exposition.</p>
+          <ul class="titles">
+            <li>Forêt vierge</li><li>Carrières Bibemus Aix</li><li>Après le feu</li><li>Naissance de l'été</li><li>Lumière d'automne</li>
+            <li>Les vignes de Provence en automne</li><li>Le lac</li><li>Jour d'été</li><li>Labyrinthe</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel" id="p-capbenat" data-panel="capbenat" role="tabpanel" aria-labelledby="t-capbenat" hidden>
+      <div class="expo-intro single">
+        <div>
+          <p class="expo-date">Juillet 2026</p>
+          <h3>Cap Bénat</h3>
+          <p class="expo-place">Le Var</p>
+          <p>Liste des tableaux exposés lors de l'exposition au Cap Bénat.</p>
+          <ul class="titles with-dim">
+            <li>Le lac des cygnes</li>
+            <li>Le lac <small>2024 · 38 × 40 cm</small></li>
+            <li>La rivière <small>2024 · 50 × 70 cm</small></li>
+            <li>La nuit en Toscane <small>2011 · 80 × 40 cm</small></li>
+            <li>La guerre en Ukraine <small>2024 · 60 × 73 cm</small></li>
+            <li>La chèvre et le porc-épic <small>2015 · 50 × 60 cm</small></li>
+            <li>L'orchestre <small>2011 · 120 × 40 cm</small></li>
+            <li>L'amour en automne <small>2018 · 90 × 90 cm</small></li>
+            <li>Buffles massaï <small>2015 · 54 × 81 cm</small></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel" id="p-parcours" data-panel="parcours" role="tabpanel" aria-labelledby="t-parcours" hidden>
+      <ol class="timeline">
+        <li><b>2022</b><span>Sélectionnée pour l'exposition « Vœux d'artistes » à Marseille, association caritative au profit des enfants malades des hôpitaux marseillais — vernissage à la librairie des Arsenaux, 17 novembre.</span></li>
+        <li><b>2021</b><span>Exposition personnelle à la Cadiérenne, La Cadière-d'Azur.</span></li>
+        <li><b>2019</b><span>8 juin au 1<sup>er</sup> juillet — Chapelle des Pénitents Bleus, La Ciotat.</span></li>
+        <li><b>2018</b><span>19 au 30 juillet — exposition personnelle « New-York et plus », salles voûtées, Cassis.</span></li>
+        <li><b>2017</b><span>5 au 15 juin — exposition personnelle, salles voûtées, Cassis.</span></li>
+        <li><b>2016</b><span>24 juin au 4 juillet — exposition personnelle, salles voûtées, Cassis. Du 26 septembre au 20 octobre — exposition personnelle, Médiathèque Jean d'Ormesson, Marignane.</span></li>
+        <li><b>2015</b><span>Exposition personnelle à la Galerie Marchand d'art, Le Castellet (juillet-août). Rétrospective « 15 ans de peinture », Chapelle des Pénitents Bleus, La Ciotat (12 juin - 12 juillet).</span></li>
+        <li><b>2014</b><span>Centre médical Mongrand, Marseille (31 octobre - 30 décembre). SM'ART, Salon Méditerranéen d'Art Contemporain, Aix-en-Provence (1<sup>er</sup> - 5 mai).</span></li>
+        <li><b>2013</b><span>Office de Tourisme, Saint-Cyr (19 - 25 juillet). Parvis du Protestantisme, Marseille (16 mai - 16 juin). SM'ART, Aix-en-Provence (2 - 6 mai).</span></li>
+        <li><b>2012</b><span>Crédit Mutuel du Vieux-Port, Marseille (30 octobre - 27 novembre). Virgin Café, Marseille (1<sup>er</sup> juillet - 1<sup>er</sup> septembre).</span></li>
+        <li><b>2011</b><span>Virgin Café, Marseille (1<sup>er</sup> décembre - 1<sup>er</sup> janvier 2012).</span></li>
+        <li><b>2010</b><span>Salles voûtées, Cour d'honneur de l'Hôtel de Ville, Cassis (4 - 14 février).</span></li>
+        <li><b>2009</b><span>Virgin Café, Marseille (30 novembre - 6 janvier 2010). Espace Culturel du Québec, Londres (novembre), Grande-Bretagne.</span></li>
+        <li><b>2008</b><span>Galerie du Port, La Ciotat (10 - 23 novembre). Vente aux enchères d'art contemporain, Claude Aguttes commissaire-priseur, Neuilly-sur-Seine (septembre). Salon Artshopping, Carrousel du Louvre, Paris (7 - 8 juin). Palais des Congrès, Cannes (mai).</span></li>
+        <li><b>2007</b><span>Château du Castellet, Var (mai). SIAPPE, Salon International d'Arts Plastiques, Perpignan (février).</span></li>
+        <li><b>2006</b><span>Chapelle des Pénitents Bleus, La Ciotat (avril). Galerie du Port, La Ciotat (juillet). SIAPPE, Perpignan (février).</span></li>
+        <li><b>2005</b><span>Galerie Ilde, Cannes (juillet-août).</span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ## ATELIER -->
+<section class="section atelier" id="atelier">
+  <div class="wrap atelier-grid">
+    <div>
+      <p class="kicker reveal">Visite de l'atelier</p>
+      <h2 class="reveal">Pousser la porte de <em>l'atelier</em></h2>
+      <div class="prose reveal">
+        <p><strong>Toutes mes œuvres ne sont pas sur le site</strong> : si vous souhaitez me rencontrer et découvrir ma collection, j'ouvre mon atelier sur rendez-vous.</p>
+        <p>On ne peint jamais pour soi, très individuellement dans son atelier : on peint toujours pour donner aux autres ce miracle du changement de la matière en éclats de lumière, en faisceaux de couleurs si profonds qu'ils peuvent entraîner sur des routes inattendues.</p>
+        <p>Avant d'arriver à un certain stade d'expression, où l'artiste se sent libéré de tous les freins d'hier, il est passé inévitablement par la représentation concrète des images et des paysages qu'il a souhaité un jour dépasser pour suggérer ses propres interprétations.</p>
+        <p>Toute œuvre d'art et forcément toute exposition correspond à un certain itinéraire de vie, de traversées d'émotions.</p>
+        <p>J'espère que dans mon travail proposé au regard de l'autre, ce dernier retrouvera le chemin de mes émotions et les clés de joie pour entrer dans mon univers où l'imaginaire s'accroche à la réalité des souvenirs enregistrés.</p>
+        <p class="strong-line">L'art est si précieux que parfois il devient, dans certaines circonstances, le seul rempart à la barbarie.</p>
+        <p class="sign-l">Chantal Léandri</p>
+      </div>
+      <a class="btn btn-solid reveal" href="#contact" data-prefill="Bonjour, je souhaiterais prendre rendez-vous pour visiter votre atelier.">Demander un rendez-vous</a>
+    </div>
+    <figure class="atelier-photo reveal tilt">
+      <img src="assets/img/t/15a94411.webp" alt="Cléa-Chantal Léandri à l'atelier, devant une toile bleue" loading="lazy" width="720" height="496">
+      <figcaption>À l'atelier, La Ciotat</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ## CONTACT-PRIX -->
+<section class="section contact" id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker reveal">Contact &amp; Prix</p>
+      <h2 class="reveal">Écrivez-moi</h2>
+    </div>
+    <div class="contact-grid">
+      <form id="form" class="form reveal" novalidate>
+        <h3>Demande de rendez-vous</h3>
+        <label>Nom<input name="nom" type="text" autocomplete="name" required></label>
+        <label>Email<input name="email" type="email" autocomplete="email" required></label>
+        <label>Message<textarea name="message" rows="5" required></textarea></label>
+        <button class="btn btn-solid" type="submit">Envoyer</button>
+        <p class="form-note" id="form-note" role="status" hidden>Merci, je vous réponds vite !</p>
+        <p class="form-fallback" id="form-fallback" hidden>Si votre messagerie ne s'est pas ouverte, écrivez-moi à <a href="mailto:chantalleandri@gmail.com">chantalleandri@gmail.com</a>.</p>
+      </form>
+
+      <div class="coords reveal">
+        <h3>Chantal Léandri</h3>
+        <address>
+          236 av Guillaume Dulac<br>13600 La Ciotat<br>
+          <a href="mailto:chantalleandri@gmail.com">chantalleandri@gmail.com</a><br>
+          <a href="tel:+33617603595">T : 06 17 60 35 95</a>
+        </address>
+        <ul class="socials">
+          <li><a href="https://www.instagram.com/clea_chantalleandri/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/chantal.leandri" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://twitter.com/CLEALEANDRI" target="_blank" rel="noopener">Twitter</a></li>
+          <li><a href="https://www.youtube.com/watch?v=P6-VcSQMoX0&amp;t=4s" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://www.singulart.com/fr/artiste/cl%C3%A9a-chantal-leandri-22797?ref=ts" target="_blank" rel="noopener">Singulart</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="price-soon reveal">Pour connaître les tarifs des œuvres, n'hésitez pas à me contacter.</p>
+
+    <!-- PRIX MASQUÉS pour le moment — pour les réafficher, retirer ce commentaire et remplacer la ligne « price-soon » ci-dessus :
+    <div class="prices reveal">
+      <h3>Prix des toiles sur support</h3>
+      <div class="price-grid">
+        <table>
+          <caption>Promotion atelier</caption>
+          <tbody>
+            <tr><th>20 × 20 cm</th><td>200 €</td></tr><tr><th>30 × 30 cm</th><td>350 €</td></tr>
+            <tr><th>40 × 40 cm</th><td>450 €</td></tr><tr><th>50 × 50 cm</th><td>550 €</td></tr>
+            <tr><th>60 × 60 cm</th><td>650 €</td></tr><tr><th>70 × 70 cm</th><td>750 €</td></tr>
+            <tr><th>80 × 80 cm</th><td>850 €</td></tr><tr><th>90 × 90 cm</th><td>950 €</td></tr>
+            <tr><th>100 × 100 cm</th><td>1 050 €</td></tr><tr><th>120 × 80 cm</th><td>1 300 €</td></tr>
+          </tbody>
+        </table>
+        <table>
+          <caption>Galerie</caption>
+          <tbody>
+            <tr><th>20 × 20 cm</th><td>200 €</td></tr><tr><th>30 × 30 cm</th><td>700 €</td></tr>
+            <tr><th>40 × 40 cm</th><td>900 €</td></tr><tr><th>50 × 50 cm</th><td>1 100 €</td></tr>
+            <tr><th>60 × 60 cm</th><td>1 300 €</td></tr><tr><th>70 × 70 cm</th><td>1 500 €</td></tr>
+            <tr><th>80 × 80 cm</th><td>1 700 €</td></tr><tr><th>90 × 90 cm</th><td>1 900 €</td></tr>
+            <tr><th>100 × 100 cm</th><td>2 100 €</td></tr><tr><th>120 × 80 cm</th><td>2 600 €</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="price-note">Pour les toiles de dimensions plus importantes et sur certaines techniques et supports, veuillez me contacter directement.</p>
+    </div>
+    -->
+  </div>
+</section>
+</main>
+
+<!-- ## FOOTER -->
+<footer class="footer">
+  <div class="wrap footer-in">
+    <p><em>Cléa-Chantal Léandri</em> · artiste peintre · 236 av Guillaume Dulac, 13600 La Ciotat</p>
+    <p><a href="mailto:chantalleandri@gmail.com">chantalleandri@gmail.com</a> · <a href="tel:+33617603595">06 17 60 35 95</a></p>
+    <p class="fine">© <span id="year">2026</span> Cléa-Chantal Léandri — Toutes les œuvres sont protégées. Création graphique du site d'origine : Véronique Bramanti (2018).</p>
+  </div>
+</footer>
+
+<!-- ## VISIONNEUSE -->
+<div class="lightbox" id="lb" role="dialog" aria-modal="true" aria-label="Visionneuse d'œuvre" hidden>
+  <button class="lb-close" aria-label="Fermer">×</button>
+  <button class="lb-nav lb-prev" aria-label="Œuvre précédente">‹</button>
+  <button class="lb-nav lb-next" aria-label="Œuvre suivante">›</button>
+  <figure class="lb-fig">
+    <div class="lb-stage"><img id="lb-img" alt=""></div>
+    <figcaption>
+      <span id="lb-cat"></span>
+      <span class="lb-hint">Cliquez pour zoomer sur la matière</span>
+      <a class="btn btn-solid lb-cta" id="lb-cta" href="#contact">Me contacter à propos de cette œuvre</a>
+    </figcaption>
+  </figure>
+</div>
+
+<!-- ## SCRIPTS -->
+<script src="assets/works.js"></script>
+<script src="js/main.js"></script>
+<script src="js/paint.js"></script>
+</body>
+</html>

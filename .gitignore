@@ -1,0 +1,8 @@
+# matériel de travail (images d'origine, audits, captures)
+raw/
+audit/
+# outils locaux
+.claude/
+.vercel/
+.env*
+node_modules/
