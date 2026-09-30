@@ -16,3 +16,6 @@ Recherche : `grep -n "## " site/js/paint.js`.
 
 ## Prix
 Masqués pour l'instant : le tableau est conservé en commentaire dans `index.html` (section CONTACT-PRIX) ; les styles `.prices` sont toujours dans le CSS.
+
+## Déploiement
+Push sur `main` (GitHub: AntoniceG/clea-leandri-maquette) = déploiement automatique sur Vercel (dossier racine : `site`, accès protégé).
